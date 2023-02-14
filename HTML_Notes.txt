@@ -1,0 +1,5 @@
+### Definition--> Most basic building block of web--> gives structure to web content.
+### Hypertext--> these are links that connect web pages to one another either within a single website or between websites.
+### Markup--> It is nothing but elements/tags such as <head>, <footer>, <section> etc, to annotate text, images etc. to display on web browser.
+
+###
