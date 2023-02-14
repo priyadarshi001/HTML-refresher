@@ -1,8 +1,20 @@
 html{
- font-size: 22px;
+ font-size: 20px;
 }
 
 body{
- background-color: #333;
+ background-color: #1b1a1a;
  color: whitesmoke;
+}
+
+a {
+ color: lightblue;
+}
+
+a:visited{
+ color: lightpink;
+}
+
+a:hover, a:active{
+ color: lightgreen;
 }
