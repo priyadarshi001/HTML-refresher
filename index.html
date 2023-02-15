@@ -12,56 +12,128 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <h1>Learning web development</h1>
+    <main>
+      <header>
+        <h1>Learning web development</h1>
+      </header>
+      <h3>Ready to learn HTML</h3>
+      <img
+        src="img/html_logo.png"
+        alt="HTML5 logo"
+        title="I am learning HTML5"
+      />
+      <figure>
+        <code>&lt;h1&gt;Hello World&lt;h1&gt;</code>
+      </figure>
+      <hr />
+      <section>
+        <h3>Planning my vacation for Delhi</h3>
+        <p>Places to visit</p>
+        <ol>
+          <li>Red Fort</li>
+          <li>India Gate</li>
+          <li>Humayun's Tomb</li>
+        </ol>
+      </section>
+      <section>
+        <h3>I'm also planning to visit beaches</h3>
+        <ul>
+          <li>
+            <p>I've heard good things about Mumbai beaches</p>
+            <figure>
+              <img
+                src="img/caribbean.jpg"
+                alt="caribbean beach"
+                loading="lazy"
+              />
+              <figcaption>Mumbai Beach Getaway</figcaption>
+            </figure>
+          </li>
+          <li>
+            <p>Goa beaches</p>
+            <address>
+              House No 649, Demello Vaddo, Near Starco Junction, Bardez,<br />
+              Anjuna Vagator Road, Anjuna-403509
+            </address>
+            <figure>
+              <img src="img/vacation.jpg" alt="Goa beach" loading="lazy" />
+              <figcaption>Goa Beach Getaway</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <section>
+        <table>
+          <caption>
+            My Daily Schedule
+          </caption>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Activity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <time datetime="09:00">9am</time>-<time datetime="12:00"
+                  >12am</time
+                >
+              </td>
+              <td>Write Code</td>
+            </tr>
+            <tr>
+              <td>
+                <time datetime="12:00">12pm</time>-<time datetime="13:00"
+                  >1pm</time
+                >
+              </td>
+              <td>Lunch</td>
+            </tr>
+            <tr>
+              <td>
+                <time datetime="13:00">1pm</time>-<time datetime="17:00"
+                  >5pm</time
+                >
+              </td>
+              <td>Study Data Structure and Algorithms</td>
+            </tr>
+            <tr>
+              <td rowspan="3">All other time</td>
+              <td>Free Time</td>
+            </tr>
+            <tr>
+              <td>Watch Movies</td>
+            </tr>
+            <tr>
+              <td>Sleep</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">And that's what I do everyday, every week. Eat, Sleep and Code.</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </main>
     <hr />
-    <h3>Ready to learn HTML</h3>
-    <img src="img/html_logo.png" alt="HTML5 logo" title="I am learning HTML5" />
-    <figure>
-      <code>&lt;h1&gt;Hello World&lt;h1&gt;</code>
-    </figure>
-    <hr />
-    <h3>Planning my vacation for Delhi</h3>
-    <p>Places to visit</p>
-    <ol>
-      <li>Red Fort</li>
-      <li>India Gate</li>
-      <li>Humayun's Tomb</li>
-    </ol>
-    <h3>I'm also planning to visit beaches</h3>
-    <ul>
-      <li>
-        <p>I've heard good things about Mumbai beaches</p>
-        <figure>
-          <img src="img/caribbean.jpg" alt="caribbean beach" loading="lazy" />
-          <figcaption>Mumbai Beach Getaway</figcaption>
-        </figure>
-      </li>
-      <li>
-        <p>Goa beaches</p>
-        <address>
-          House No 649, Demello Vaddo, Near Starco Junction, Bardez,<br />
-          Anjuna Vagator Road, Anjuna-403509
-        </address>
-        <figure>
-          <img src="img/vacation.jpg" alt="Goa beach" loading="lazy">
-          <figcaption>Goa Beach Getaway</figcaption>
-        </figure>
-      </li>
-    </ul>
-    <hr />
-    &lt;&lt;&lt;&copy; <a href="about.html">Rahul Priyadarshi</a> &gt;&gt;&gt;
-    <p><a href="#">Back to Top</a></p>
+    <footer aria-label="primary-footer">
+      <p>
+        &lt;&lt;&lt;&copy;
+        <a href="about.html">Rahul Priyadarshi</a> &gt;&gt;&gt;
+      </p>
+      <p><a href="#">Back to Top</a></p>
+    </footer>
   </body>
 </html>
 
 <!-- Learnings:
-       1. title attribute of <img>: display text when hover over.
-      2. loading:"lazy"== If images don't appear in view height then use this attribute, it allows images to load when user scroll down to the image part of page. == "LAZY LOADING"
-        $$ Go to network tab in devTools -> select img -> re-load the page and see only 1st image will appear  
-      3. <figure> & <figcaption> ==> helps search engine and screen reader. 
-      4. <code> tag 
-      5. copyright free image sites: 
-        $$ unsplash.com
-        $$ pexels.com
-        $$ pixabay.com
+      1. <main>, <header> {contains h1 tag, nav tag etc.}, <footer>, <figure>
+      2. if say 2 section is used or 2 navbar is used(one at top and one at bottom)==> they should be labeled ==> "aria-label"
+      3. <table>, <time>, <caption>, <thead>
+
+
+    Though it may seems unnecessary to put tags like <figure>, <time>, <thead> but it is a good practice as they are part of HTML semantics and helps in navigation (if keyboard is used instead of mouse) and for screen readers.
     -->
