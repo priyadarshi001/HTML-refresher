@@ -12,52 +12,56 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <h1>My Goals for the year</h1>
-    <hr>
-    <nav>
-        <ul>
-            <li><a href="#html">Learning HTML</a></li>
-            <li><a href="#journey">Journey</a></li>
-        </ul>
-    </nav>
-    <hr>
-    <section id="html">
-      <h3>Learning web development</h3>
-      <ul>
-        <li><p>Started with YouTube tutorials</p></li>
-        <li>
-          <p>
-            Following
-            <abbr title="Mozilla Development Network"
-              ><a href="https://developer.mozilla.org/">MDN</a></abbr
-            >
-          </p>
-        </li>
-      </ul>
-    </section>
+    <h1>Learning web development</h1>
     <hr />
-    <section id="journey">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iusto quo
-      odio suscipit pariatur voluptatum eaque a beatae alias vero? Aut excepturi
-      ut ab quidem deserunt expedita dolor officia est? Animi vel fuga
-      consectetur, quasi, culpa, repellat officia pariatur dolore temporibus
-      dignissimos molestiae voluptatibus vitae tempore deleniti. Corporis, sed
-      facere? Quae perferendis explicabo iusto mollitia voluptatem voluptatum
-      assumenda veritatis doloribus. Pariatur minus eaque voluptatem repellat
-      debitis aliquid cumque ducimus a iste sapiente vel repudiandae incidunt,
-      quaerat deleniti similique dolorem enim harum id accusamus quae cupiditate
-      nesciunt consectetur officia blanditiis. Impedit?
-    </section>
+    <h3>Ready to learn HTML</h3>
+    <img src="img/html_logo.png" alt="HTML5 logo" title="I am learning HTML5" />
+    <figure>
+      <code>&lt;h1&gt;Hello World&lt;h1&gt;</code>
+    </figure>
     <hr />
-
+    <h3>Planning my vacation for Delhi</h3>
+    <p>Places to visit</p>
+    <ol>
+      <li>Red Fort</li>
+      <li>India Gate</li>
+      <li>Humayun's Tomb</li>
+    </ol>
+    <h3>I'm also planning to visit beaches</h3>
+    <ul>
+      <li>
+        <p>I've heard good things about Mumbai beaches</p>
+        <figure>
+          <img src="img/caribbean.jpg" alt="caribbean beach" loading="lazy" />
+          <figcaption>Mumbai Beach Getaway</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>Goa beaches</p>
+        <address>
+          House No 649, Demello Vaddo, Near Starco Junction, Bardez,<br />
+          Anjuna Vagator Road, Anjuna-403509
+        </address>
+        <figure>
+          <img src="img/vacation.jpg" alt="Goa beach" loading="lazy">
+          <figcaption>Goa Beach Getaway</figcaption>
+        </figure>
+      </li>
+    </ul>
+    <hr />
     &lt;&lt;&lt;&copy; <a href="about.html">Rahul Priyadarshi</a> &gt;&gt;&gt;
     <p><a href="#">Back to Top</a></p>
   </body>
 </html>
 
 <!-- Learnings:
-       1. Types of references:
-            Absolute === whole website link e.g., MDN
-            Relative === location to local directory
-            Internal reference === 
--->
+       1. title attribute of <img>: display text when hover over.
+      2. loading:"lazy"== If images don't appear in view height then use this attribute, it allows images to load when user scroll down to the image part of page. == "LAZY LOADING"
+        $$ Go to network tab in devTools -> select img -> re-load the page and see only 1st image will appear  
+      3. <figure> & <figcaption> ==> helps search engine and screen reader. 
+      4. <code> tag 
+      5. copyright free image sites: 
+        $$ unsplash.com
+        $$ pexels.com
+        $$ pixabay.com
+    -->
