@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Rahul Priyadarshi" />
+    <meta name="description" content="Let's have a coffee together" />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <h2>Contact Me</h2>
+    <p>I'd really like to head from you!</p>
+    <form action="https://httpbin.org/get" method="get">
+     <fieldset>
+      <legend>Personal Info</legend>
+      <label for="firstName">First Name:</label>
+      <input
+        type="text"
+        name="firstName"
+        id="firstName"
+        placeholder="Rahul"
+        autocomplete="on"
+        required
+        autofocus
+      />
+      <br /><br />
+      <label for="lastName">Last Name:</label>
+      <input
+        type="text"
+        name="lastName"
+        id="lastName"
+        placeholder="Priyadarshi"
+        autocomplete="on"
+        required
+      />
+      <br /><br />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Your secret code"
+        required
+      />
+      <br /><br />
+      <label for="phone">Phone:</label>
+      <input
+        type="tel"
+        name="phone"
+        id="phone"
+        placeholder="5555555555"
+        required
+      />
+      <br /><br />
+      <label for="decade">Decade:</label>
+      <input
+        type="number"
+        name="decade"
+        id="decade"
+        min="1950"
+        max="2023"
+        step="10"
+        value="1980"
+      />
+      <p>
+        <label for="coffee"> Favorite Coffee:</label>
+        <select name="coffee" id="coffee" multiple>
+          <optgroup label="Coffees">
+            <option value="regular coffee">Regular Coffee</option>
+            <option value="iced coffee">Iced Coffee</option>
+          </optgroup>
+          <optgroup label="Espresso Drinks">
+            <option value="latte" selected>Latte</option>
+            <option value="cappuccino">Cappuccino</option>
+            <option value="cortado">Cortado</option>
+            <option value="americano">Americano</option>
+          </optgroup>
+          <option value="other">Other</option>
+        </select>
+      </p>
+      </fieldset>
+      <hr />
+      <p>
+        A different way to select items from a drop down options: now we can
+        type to select items
+      </p>
+      <label for="coffee">Favorite Coffee:</label>
+      <input type="text" name="coffee" id="coffee" list="coffee-list" />
+      <datalist id="coffee-list">
+        <option value="coffee"></option>
+        <option value="latte"></option>
+        <option value="espresso"></option>
+        <option value="cortado"></option>
+        <option value="americano"></option>
+        <option value="other"></option>
+      </datalist>
+      <hr>
+      <fieldset>
+       <legend>What is your favorite food?</legend>
+       <p>
+        <input type="radio" name="food" id="tacos" value="tacos">
+        <label for="tacos">Tacos</label>
+       </p>
+       <p>
+        <input type="radio" name="food" id="burger" value="burger">
+        <label for="burger">Burger</label>
+       </p>
+       <p>
+        <input type="radio" name="food" id="pizza" value="pizza">
+        <label for="pizza">Pizza</label>
+       </p>
+       <p>
+        <input type="radio" name="food" id="KFC" value="KFC">
+        <label for="KFC">KFC</label>
+       </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
+
+<!-- Learnings:
+         Form comprised of mainly 3 things: label, inputs and buttons
+         "name" attribute value <input> should be same as that on server.
+         "id" attribute of <input> should be same as "for" attribute of <label>.
+         Attributes of <input>
+            "autocomplete"==> remember all the previous input entered.
+            "autofocus"==> when page loads cursor will automatically placed inside the input field. If more than one autofocus only first one will work.
+            min, max, step, value
+            type = text/number/radio
+         <select> ==> a drop down menu
+            id should be same as "for" of label
+            "multiple" - to select multiple option
+         <option>
+            attributes like "selected", "value"
+         <optgroup> ==> group drop down items into a group
+         <datalist> ==> not recognized by emmet so need to type it including <>. Its "id" attribute should have same value as of "list" attribute of input tag.
+         <fieldset> ==> put a box around collection of items, this is important if we've different sections like personal info, education details, work exp etc.
+         <legend> ==> Gives title to each of such box.
+
+
+        -->
